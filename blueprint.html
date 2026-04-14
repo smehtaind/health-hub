@@ -26,11 +26,23 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--tx);
 .dt{display:inline-block;font-size:11px;padding:4px 10px;border-radius:20px;font-weight:500;margin:2px;}.dt-p{background:var(--tbg);color:var(--tl);}.dt-lo{background:var(--gbg);color:var(--grn);}.dt-med{background:var(--abg);color:var(--amb);}.dt-hi{background:var(--rbg);color:var(--red);}
 .sep{border:none;height:1px;background:var(--bd);margin:36px 0;}
 @media(max-width:600px){.G2,.G3,.G4{grid-template-columns:1fr 1fr;}}
+
+/* Sticky top bar */
+.topbar{position:sticky;top:0;z-index:1001;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);padding:10px 20px;border-bottom:1px solid var(--bd);max-width:800px;margin:0 auto;}
+.topbar a{font-size:13px;font-weight:600;color:var(--red);text-decoration:none;}
+
+/* Bottom nav */
+.bnav{position:fixed;bottom:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--bd);padding:6px 0 env(safe-area-inset-bottom,8px);}
+.bnav-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-around;}
+.bnav a{text-decoration:none;text-align:center;font-size:10px;font-weight:600;color:var(--mu);display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 8px;border-radius:8px;transition:color .2s;}
+.bnav a.on{color:var(--red);}
+.bnav a:hover{color:var(--red);}
+.bnav-icon{font-size:18px;}
 </style>
 </head>
 <body>
 <div id="P"></div>
-<div style="max-width:800px;margin:0 auto;padding:8px 20px 0;"><a href="index.html" style="font-size:12px;font-weight:600;color:#E23744;text-decoration:none;">← Health Hub</a></div>
+<div class="topbar"><a href="index.html">← Health Hub</a></div>
 <nav class="N"><div class="NI"><button class="NB on" onclick="go('#top')">Start</button><button class="NB" onclick="go('#cal')">Calories</button><button class="NB" onclick="go('#bmr')">BMR</button><button class="NB" onclick="go('#met')">Macros</button><button class="NB" onclick="go('#glu')">Glucose</button><button class="NB" onclick="go('#ins')">Insulin</button><button class="NB" onclick="go('#fuel')">Two Fuels</button><button class="NB" onclick="go('#inf')">Inflammation</button><button class="NB" onclick="go('#dht')">DHT</button><button class="NB" onclick="go('#dia')">Diabetes</button></div></nav>
 <div class="pg">
 <div class="H" id="top"><h1>The complete <b>health blueprint</b></h1><p>Indian Vegetarian Edition &middot; The science of WHY, then exactly WHAT to do. One scroll. Everything connected.</p></div>
@@ -165,6 +177,12 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--tx);
 
 <div style="text-align:center;padding:48px 0 24px;color:var(--mu);font-size:10px;"><p style="font-weight:600;">The Complete Health Blueprint &#183; Indian Vegetarian Edition &#183; 2026</p><p>Science reference &#183; See daily plan + maid sheets for meals &amp; exercise</p><p style="margin-top:4px;">Consult a doctor before starting any health plan.</p></div>
 </div>
+<nav class="bnav"><div class="bnav-inner">
+<a href="index.html"><span class="bnav-icon">🏠</span>Hub</a>
+<a href="plan.html"><span class="bnav-icon">📋</span>Plan</a>
+<a href="kitchen.html"><span class="bnav-icon">🍽</span>Kitchen</a>
+<a href="blueprint.html" class="on"><span class="bnav-icon">🧬</span>Science</a>
+</div></nav>
 <script>
 window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;document.getElementById('P').style.width=(scrollY/h*100)+'%';});
 function go(s){document.querySelector(s).scrollIntoView({behavior:'smooth'});}

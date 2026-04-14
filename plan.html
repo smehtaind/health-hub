@@ -42,12 +42,25 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:#1C1C1C;fo
 .rc{border:1px solid #E8E8E8;border-radius:8px;padding:5px 8px;font-size:11px;color:#3D4152;line-height:1.4;}
 .rc b{color:#1C1C1C;font-weight:700;font-size:11px;}
 .rc-em{border-color:#D4870E;background:#FFF8E1;}
+
+/* Sticky top bar */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);padding:10px 16px;border-bottom:1px solid #E8E8E8;max-width:640px;margin:0 auto;}
+.topbar a{font-size:13px;font-weight:600;color:#E23744;text-decoration:none;}
+
+/* Bottom nav */
+.bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid #E8E8E8;padding:6px 0 env(safe-area-inset-bottom,8px);}
+.bnav-inner{max-width:640px;margin:0 auto;display:flex;justify-content:space-around;}
+.bnav a{text-decoration:none;text-align:center;font-size:10px;font-weight:600;color:#93959F;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 8px;border-radius:8px;transition:color .2s;}
+.bnav a.on{color:#E23744;}
+.bnav a:hover{color:#E23744;}
+.bnav-icon{font-size:18px;}
+.page{padding-bottom:72px;}
 </style>
 </head>
 <body>
+<div class="topbar"><a href="index.html">← Health Hub</a></div>
 <div class="page">
 
-<div style="padding:8px 0 0;"><a href="index.html" style="font-size:12px;font-weight:600;color:#E23744;text-decoration:none;">← Health Hub</a></div>
 <div class="hdr">
 <h1>My Daily Plan</h1>
 <p>~1800 cal &middot; 90g protein &middot; 8 eating blocks</p>
@@ -158,5 +171,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:#1C1C1C;fo
 </div>
 
 </div>
+<nav class="bnav"><div class="bnav-inner">
+<a href="index.html"><span class="bnav-icon">🏠</span>Hub</a>
+<a href="plan.html" class="on"><span class="bnav-icon">📋</span>Plan</a>
+<a href="kitchen.html"><span class="bnav-icon">🍽</span>Kitchen</a>
+<a href="blueprint.html"><span class="bnav-icon">🧬</span>Science</a>
+</div></nav>
 </body>
 </html>
