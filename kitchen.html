@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitchen Rules & Dish Options</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:#1C1C1C;font-size:13px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+@media print{@page{margin:4mm 10mm;size:A4;}}
+.page{max-width:640px;margin:0 auto;padding:10px 16px 24px;}
+
+/* Header */
+.hdr{text-align:center;padding:10px 0 8px;margin-bottom:8px;border-bottom:2px solid #E23744;}
+.hdr h1{font-size:18px;font-weight:800;color:#E23744;margin-bottom:2px;}
+.hdr p{font-size:13px;color:#3D4152;font-weight:600;}
+
+/* Section */
+.sec{margin-bottom:10px;border:1.5px solid #E8E8E8;border-radius:10px;overflow:hidden;}
+.sec-h{padding:6px 12px;display:flex;justify-content:space-between;align-items:center;background:#fff;border-bottom:1px solid #E8E8E8;}
+.sec-h h2{font-size:14px;font-weight:700;color:#1C1C1C;}
+.sec-h .cal{font-size:12px;font-weight:700;color:#696B79;}
+.sec-h .sub{font-weight:500;font-size:11px;color:#696B79;}
+.sec-b{padding:6px 10px;}
+
+/* Accent borders */
+.sec-rules .sec-h{border-left:4px solid #E23744;}
+.sec-bk .sec-h{border-left:4px solid #D4870E;}
+.sec-lu .sec-h{border-left:4px solid #267E3E;}
+.sec-di .sec-h{border-left:4px solid #1976D2;}
+.sec-da .sec-h{border-left:4px solid #7B1FA2;}
+
+/* Columns */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;}
+
+.col{background:#F8F8F8;border-radius:8px;padding:6px 8px;}
+.col-title{font-size:11px;font-weight:700;color:#3D4152;margin-bottom:4px;padding-bottom:3px;border-bottom:1px solid #E8E8E8;}
+
+/* Dish row */
+.dr{display:flex;justify-content:space-between;align-items:baseline;padding:2px 0;line-height:1.4;}
+.dr .name{font-size:12px;color:#1C1C1C;font-weight:500;}
+.dr .meta{font-size:10px;color:#696B79;font-weight:600;white-space:nowrap;}
+.dg{color:#93959F;font-size:10px;font-weight:400;}
+
+/* Insulin tag */
+.tag{display:inline-block;font-size:6px;font-weight:700;padding:1px 4px;border-radius:8px;vertical-align:middle;margin-left:2px;}
+.tag-lo{background:#E8F5E9;color:#267E3E;}
+.tag-md{background:#FFF8E1;color:#D4870E;}
+
+/* Rules detail lines - matching daily plan */
+.dl{display:flex;align-items:baseline;gap:6px;padding:2px 0;font-size:12px;color:#3D4152;line-height:1.5;}
+.dl-icon{flex-shrink:0;width:16px;text-align:center;font-size:12px;}
+.dl-text{flex:1;}
+.dl-text b{font-weight:700;color:#1C1C1C;}
+
+/* Tip / warning */
+.tip{font-size:11px;color:#D4870E;font-weight:600;padding:2px 0 0 0;}
+.warn{font-size:11px;color:#E23744;font-weight:600;padding:2px 0 0 0;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="padding:8px 0 0;"><a href="index.html" style="font-size:12px;font-weight:600;color:#E23744;text-decoration:none;">← Health Hub</a></div>
+<div class="hdr">
+<h1>Kitchen Rules &amp; Dish Options</h1>
+<p>~1800 cal &middot; 90g protein</p>
+</div>
+
+<!-- RULES -->
+<div class="sec sec-rules">
+<div class="sec-h"><h2>⚠️ Kitchen Rules</h2></div>
+<div class="sec-b">
+<div class="g2">
+<div class="col">
+<div class="dl"><span class="dl-icon">🛢</span><span class="dl-text"><b>Oil:</b> 1 level tbsp (15ml) MEASURED per dish. Mustard / ghee only. No refined. No reheating oil.</span></div>
+<div class="dl"><span class="dl-icon">🌾</span><span class="dl-text"><b>Atta:</b> Multigrain (wheat+chana+bajra). No maida ever.</span></div>
+</div>
+<div class="col">
+<div class="dl"><span class="dl-icon">🚫</span><span class="dl-text"><b>Never:</b> Zero sugar in tea/food/drinks. No jaggery. No cream/malai.</span></div>
+<div class="dl"><span class="dl-icon">🥛</span><span class="dl-text"><b>Make daily:</b> Curd at home. Chaas (curd+water+jeera+pudina+kala namak). Haldi doodh at night.</span></div>
+<div class="dl"><span class="dl-icon">📦</span><span class="dl-text"><b>Every night:</b> Soak 5 almonds + 2 walnuts. Pack dabba. Fill 750ml bottle.</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- PORTIONS -->
+<div class="sec" style="border-color:#B2DFDB;">
+<div class="sec-h" style="border-left:4px solid #00796B;"><h2>📏 Portions &mdash; kitna dalna hai</h2></div>
+<div class="sec-b">
+<div class="g3">
+<div class="col">
+<div class="col-title">🥣 Katori = 150ml</div>
+<div class="dr"><span class="name">Dal (cooked)</span><span class="meta"><b>180g</b></span></div>
+<div class="dr"><span class="name">Sabzi (cooked)</span><span class="meta"><b>120g</b></span></div>
+<div class="dr"><span class="name">Curd</span><span class="meta"><b>150g</b></span></div>
+<div class="dr"><span class="name">Rice (cooked)</span><span class="meta"><b>130g</b></span></div>
+</div>
+<div class="col">
+<div class="col-title">🍽 Other portions</div>
+<div class="dr"><span class="name">1 roti</span><span class="meta"><b>30g</b> atta (6")</span></div>
+<div class="dr"><span class="name">Paneer (dinner)</span><span class="meta"><b>80g</b></span></div>
+<div class="dr"><span class="name">Paneer (cheela)</span><span class="meta"><b>60g</b></span></div>
+<div class="dr"><span class="name">Soup bowl</span><span class="meta"><b>200ml</b></span></div>
+</div>
+<div class="col">
+<div class="col-title">🫘 Dry dal / serving</div>
+<div class="dr"><span class="name">Rajma / chole / lobia</span><span class="meta"><b>40g</b></span></div>
+<div class="dr"><span class="name">Moong / chana dal</span><span class="meta"><b>35g</b></span></div>
+<div class="dr"><span class="name">Masoor / moong dal</span><span class="meta"><b>30g</b></span></div>
+<div class="dr"><span class="name">Oil per dish</span><span class="meta"><b>15ml</b></span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- BREAKFAST -->
+<div class="sec sec-bk">
+<div class="sec-h"><h2>🍳 Breakfast <span class="sub">&mdash; always add curd (150g)</span></h2><span class="cal">~350 cal &middot; 18g+ P</span></div>
+<div class="sec-b">
+<div class="g2">
+<div class="col">
+<div class="col-title">🍽 Protein-first (pick 1)</div>
+<div class="dr"><span class="name">Moong dal cheela (2) + mint chutney</span><span class="meta">15P &middot; 250 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Besan cheela (2) + paneer stuffing</span><span class="meta">18P &middot; 280 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Paneer paratha (1) + curd</span><span class="meta">16P &middot; 300 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Paneer bhurji + 1 roti</span><span class="meta">22P &middot; 310 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sprout cheela (2)</span><span class="meta">14P &middot; 240 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sattu paratha (1) + chutney</span><span class="meta">14P &middot; 280 <span class="tag tag-md">▬</span></span></div>
+</div>
+<div class="col">
+<div class="col-title">🍽 Carb-base (pick 1)</div>
+<div class="dr"><span class="name">Oats upma + veggies</span><span class="meta">12P &middot; 260 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Idli (3) + sambhar + chutney</span><span class="meta">11P &middot; 270 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Aloo paratha (1) + curd</span><span class="meta">10P &middot; 300 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Vermicelli upma (1 plate)</span><span class="meta">10P &middot; 280 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Savoury daliya (1 bowl)</span><span class="meta">10P &middot; 260 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Poha + peanuts (1 plate)</span><span class="meta">8P &middot; 270 <span class="tag tag-md">▬</span></span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- LUNCH -->
+<div class="sec sec-lu">
+<div class="sec-h"><h2>🍽 Lunch <span class="sub">&mdash; Salad FIRST → dal + sabzi + curd + 3 rotis</span></h2><span class="cal">~550 cal &middot; 25g+ P</span></div>
+<div class="sec-b">
+<div class="g2">
+<div class="col">
+<div class="col-title">🫘 Dal &mdash; pick 1 <span style="font-weight:400;font-size:9px;color:#93959F;">legumes 40g · light 30-35g dry</span></div>
+<div class="dr"><span class="name">Rajma masala</span><span class="meta">15P &middot; 180 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Chole masala</span><span class="meta">14P &middot; 170 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Whole moong</span><span class="meta">14P &middot; 160 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Panchmel</span><span class="meta">14P &middot; 170 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Lobia curry</span><span class="meta">13P &middot; 165 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Chana dal fry</span><span class="meta">12P &middot; 160 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Dal makhani (no cream)</span><span class="meta">12P &middot; 190 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Moong-palak dal</span><span class="meta">11P &middot; 150 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Masoor dal tadka</span><span class="meta">10P &middot; 150 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Kadhi pakora</span><span class="meta">10P &middot; 180 <span class="tag tag-md">▬</span></span></div>
+</div>
+<div class="col">
+<div class="col-title">🥬 Sabzi &mdash; pick 1</div>
+<div class="dr"><span class="name">Sprouts sabzi</span><span class="meta">8P &middot; 90 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Broccoli stir-fry</span><span class="meta">3P &middot; 55 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Gobhi matar</span><span class="meta">3P &middot; 85 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Methi sabzi</span><span class="meta">3P &middot; 70 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sookhi palak</span><span class="meta">3P &middot; 65 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Mixed veg dry</span><span class="meta">3P &middot; 80 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Patta gobhi sabzi</span><span class="meta">2P &middot; 50 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Bhindi masala</span><span class="meta">2P &middot; 80 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">French beans</span><span class="meta">2P &middot; 60 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Lauki kofta</span><span class="meta">2P &middot; 70 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sem ki phali</span><span class="meta">2P &middot; 60 <span class="tag tag-lo">▼</span></span></div>
+</div>
+</div>
+<div class="g2" style="margin-top:4px;">
+<div class="col">
+<div class="col-title">🥗 Salad &mdash; serve FIRST + curd/raita</div>
+<div class="dr"><span class="name">Curd (1 katori = 150g)</span><span class="meta">8P &middot; 80 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Raita</span><span class="meta">6P &middot; 70 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sprout salad</span><span class="meta">5P &middot; 60 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Kachumber</span><span class="meta">1P &middot; 25 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Saut&eacute;ed bell peppers</span><span class="meta">1P &middot; 50 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Carrot-beet slaw</span><span class="meta">1P &middot; 30 <span class="tag tag-lo">▼</span></span></div>
+</div>
+<div class="col">
+<div class="col-title">🍚 Rice day (2x/wk) &mdash; full meal</div>
+<div class="dr"><span class="name">Paneer fried rice + raita</span><span class="meta">20P &middot; 380 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Khichdi + kadhi</span><span class="meta">16P &middot; 330 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Rajma + brown rice</span><span class="meta">15P &middot; 350 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Chole + brown rice</span><span class="meta">14P &middot; 340 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Daliya khichdi</span><span class="meta">14P &middot; 300 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Veg pulao + raita</span><span class="meta">8P &middot; 320 <span class="tag tag-md">▬</span></span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DINNER -->
+<div class="sec sec-di">
+<div class="sec-h"><h2>🍲 Dinner <span class="sub">&mdash; Soup FIRST → protein → 2 rotis last</span></h2><span class="cal">~450 cal &middot; 22g+ P</span></div>
+<div class="sec-b">
+<div class="col" style="margin-bottom:4px;">
+<div class="col-title">🥣 Soup &mdash; pick 1 (serve FIRST, 200ml)</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:0 16px;">
+<div class="dr"><span class="name">Moong dal soup</span><span class="meta">5P &middot; 60 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Palak soup</span><span class="meta">3P &middot; 45 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Mixed veg soup</span><span class="meta">2P &middot; 45 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Tomato soup</span><span class="meta">1P &middot; 50 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Lauki soup</span><span class="meta">1P &middot; 35 <span class="tag tag-lo">▼</span></span></div>
+</div>
+</div>
+<div class="g2">
+<div class="col">
+<div class="col-title">🧀 Paneer (3x/wk)</div>
+<div class="dr"><span class="name">Paneer bhurji</span><span class="meta">22P &middot; 260 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Paneer tikka tawa</span><span class="meta">22P &middot; 250 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Kadhai paneer</span><span class="meta">20P &middot; 270 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Matar paneer</span><span class="meta">20P &middot; 260 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Palak paneer</span><span class="meta">18P &middot; 250 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Paneer do pyaza</span><span class="meta">18P &middot; 260 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Paneer kali mirch</span><span class="meta">18P &middot; 240 <span class="tag tag-lo">▼</span></span></div>
+</div>
+<div class="col">
+<div class="col-title">🫘 Dal (4x/wk) <span style="font-weight:400;font-size:9px;color:#93959F;">legumes 40g &middot; light 30-35g dry</span></div>
+<div class="dr"><span class="name">Whole moong</span><span class="meta">14P &middot; 160 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Chana dal+gobhi</span><span class="meta">12P &middot; 170 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Moong dal+sabzi</span><span class="meta">11P &middot; 150 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Kadhi pakora</span><span class="meta">10P &middot; 180 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Masoor dal+tori</span><span class="meta">10P &middot; 150 <span class="tag tag-lo">▼</span></span></div>
+<div class="warn">⚠️ Always add curd (150g) or paneer crumble (50g)</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DABBA -->
+<div class="sec sec-da">
+<div class="sec-h"><h2>📦 Office Dabba</h2><span class="cal">~220 cal &middot; 12-17g P</span></div>
+<div class="sec-b">
+<div class="g2">
+<div class="col">
+<div class="col-title">📦 Box 1 &middot; 11 AM &mdash; same daily</div>
+<div class="dr"><span class="name">Roasted chana (25g)</span><span class="meta">5P &middot; 50 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Makhana (15g)</span><span class="meta">3P &middot; 45 <span class="tag tag-lo">▼</span></span></div>
+</div>
+<div class="col">
+<div class="col-title">📦 Box 2 &middot; 5 PM &mdash; rotate</div>
+<div class="dr"><span class="name">Paneer cubes + pepper (50g)</span><span class="meta">9P &middot; 130 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Sprouts chaat (50g)</span><span class="meta">8P &middot; 90 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Apple + almonds (5)</span><span class="meta">4P &middot; 120 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Guava + almonds (5)</span><span class="meta">4P &middot; 100 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Orange + almonds (5)</span><span class="meta">4P &middot; 100 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Mixed seeds (1 tbsp)</span><span class="meta">5P &middot; 90 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Pumpkin seeds (1 tbsp)</span><span class="meta">5P &middot; 45 <span class="tag tag-lo">▼</span></span></div>
+<div class="dr"><span class="name">Dates (2) + almonds (3)</span><span class="meta">3P &middot; 100 <span class="tag tag-md">▬</span></span></div>
+<div class="dr"><span class="name">Fruit chaat</span><span class="meta">1P &middot; 80 <span class="tag tag-md">▬</span></span></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

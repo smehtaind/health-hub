@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Daily Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:#1C1C1C;font-size:13px;line-height:1.55;-webkit-font-smoothing:antialiased;}
+@media print{@page{margin:4mm 10mm;size:A4;}}
+.page{max-width:640px;margin:0 auto;padding:10px 16px 24px;}
+
+/* Header */
+.hdr{text-align:center;padding:10px 0 8px;margin-bottom:8px;border-bottom:2px solid #E23744;}
+.hdr h1{font-size:18px;font-weight:800;color:#E23744;margin-bottom:2px;}
+.hdr p{font-size:13px;color:#3D4152;font-weight:600;}
+
+/* Timeline block */
+.blk{padding:8px 0;border-bottom:1px solid #E8E8E8;}
+.blk:last-of-type{border-bottom:none;}
+.blk-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px;}
+.blk-time{font-size:13px;font-weight:700;color:#E23744;}
+.blk-title{font-size:13px;font-weight:700;color:#1C1C1C;flex:1;margin-left:8px;}
+.blk-cal{font-size:12px;font-weight:700;color:#1C1C1C;white-space:nowrap;}
+
+/* Detail lines with icons */
+.dl{display:flex;align-items:baseline;gap:6px;padding:1px 0 1px 0;font-size:12px;color:#3D4152;line-height:1.5;}
+.dl-icon{flex-shrink:0;width:16px;text-align:center;font-size:12px;}
+.dl-text{flex:1;}
+.dl-text b{font-weight:600;color:#1C1C1C;}
+
+/* Tip line */
+.tip{font-size:11px;color:#D4870E;font-weight:600;padding:1px 0 0 22px;}
+
+/* Section card */
+.sec{margin-top:8px;border:1.5px solid #E8E8E8;border-radius:10px;overflow:hidden;}
+.sec-h{padding:5px 10px;font-size:13px;font-weight:700;border-left:4px solid #E23744;border-bottom:1px solid #E8E8E8;color:#1C1C1C;}
+
+/* Rules grid */
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:6px 8px;}
+.rc{border:1px solid #E8E8E8;border-radius:8px;padding:5px 8px;font-size:11px;color:#3D4152;line-height:1.4;}
+.rc b{color:#1C1C1C;font-weight:700;font-size:11px;}
+.rc-em{border-color:#D4870E;background:#FFF8E1;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="padding:8px 0 0;"><a href="index.html" style="font-size:12px;font-weight:600;color:#E23744;text-decoration:none;">← Health Hub</a></div>
+<div class="hdr">
+<h1>My Daily Plan</h1>
+<p>~1800 cal &middot; 90g protein &middot; 8 eating blocks</p>
+</div>
+
+<!-- 5:55 AM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">5:55 AM</span><span class="blk-title">Wake</span><span class="blk-cal">80 cal</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text">Soaked almonds 5 (7g) + walnuts 2 halves (5g)</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Warm water + lemon (250ml)</span></div>
+</div>
+
+<!-- 6:10 AM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">6:10 AM</span><span class="blk-title">Fasted walk</span><span class="blk-cal" style="color:#267E3E;">fat burn mode</span></div>
+<div class="dl"><span class="dl-icon">🚶</span><span class="dl-text">25→40 min brisk, empty stomach. Add 2 min every 3 days. Weekend 45 min.</span></div>
+</div>
+
+<!-- 6:50 AM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">6:50 AM</span><span class="blk-title">Post-walk</span><span class="blk-cal">120 cal &middot; 25g P</span></div>
+<div class="dl"><span class="dl-icon">💊</span><span class="dl-text">Whey 30g + Creatine 5g in 300ml water. Sip through study.</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Plain water 500ml to rehydrate.</span></div>
+<div class="tip">⚡ Creatine: 1-2 kg water gain wk1-2 = normal, not fat</div>
+</div>
+
+<!-- 8:20 AM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">8:20 AM</span><span class="blk-title">Breakfast</span><span class="blk-cal">350 cal &middot; 20g P</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text">Maid's dish + curd (1 katori = 150g)</span></div>
+<div class="dl"><span class="dl-icon">🍎</span><span class="dl-text">Amla (1) daily. Banana (1) AFTER protein on walk days only.</span></div>
+<div class="dl"><span class="dl-icon">💊</span><span class="dl-text">D3 2000IU + Biotin 5000mcg with food. B12 1000mcg <b>10 min before</b> food.</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Water 250ml</span></div>
+</div>
+
+<!-- 11:00 AM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">11:00 AM</span><span class="blk-title">Snack 1 (dabba)</span><span class="blk-cal">100 cal &middot; 6g P</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text">Chana 25g + makhana 15g</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Green tea / chaas 200ml / nimbu pani &mdash; pick 1, no sugar</span></div>
+</div>
+
+<!-- 1:00 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">1:00 PM</span><span class="blk-title">Lunch &mdash; BIGGEST</span><span class="blk-cal">550 cal &middot; 25g+ P</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text"><b>Salad FIRST</b> → dal (1 katori) → sabzi (1 katori) → curd (150g) → 3 rotis last</span></div>
+<div class="dl"><span class="dl-icon">💊</span><span class="dl-text">Omega-3 1000mg &mdash; take with food</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Jeera water before meal. Chaas 200ml at 2 PM.</span></div>
+<div class="tip">⚡ If dal &lt;14g P → pick sprouts sabzi (8g P)</div>
+</div>
+
+<!-- 5:00 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">5:00 PM</span><span class="blk-title">Snack 2 (dabba)</span><span class="blk-cal">120 cal &middot; 5g P</span></div>
+<div class="dl"><span class="dl-icon">🍎</span><span class="dl-text">Apple / guava / orange / pear &mdash; pick 1 (~150g)</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text">Almonds 5 / makhana 15g / paneer cubes 50g / sprouts 50g &mdash; pick 1</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Green tea / sattu drink at 6:30 PM</span></div>
+</div>
+
+<!-- 8:40 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">8:40 PM</span><span class="blk-title">Dinner &mdash; LIGHT</span><span class="blk-cal">450 cal &middot; 22g+ P</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text"><b>Soup first</b> (200ml) → paneer 80g or dal → sabzi → 2 rotis last</span></div>
+<div class="dl"><span class="dl-icon">💧</span><span class="dl-text">Water &mdash; 1 small glass only</span></div>
+<div class="tip">⚡ DAL NIGHTS: always add curd (150g) or paneer crumble (50g)</div>
+</div>
+
+<!-- 9:05 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">9:05 PM</span><span class="blk-title">Post-dinner walk</span><span class="blk-cal"></span></div>
+<div class="dl"><span class="dl-icon">🚶</span><span class="dl-text">10 min. Inside house fine. Burns glucose → fat burn starts 1-2 hrs earlier.</span></div>
+</div>
+
+<!-- 9:20 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">9:20 PM</span><span class="blk-title">Before bed</span><span class="blk-cal">80 cal &middot; 5g P</span></div>
+<div class="dl"><span class="dl-icon">🍽</span><span class="dl-text">Haldi doodh &mdash; milk 150ml + turmeric &frac12;tsp + black pepper</span></div>
+<div class="dl"><span class="dl-icon">💊</span><span class="dl-text">Magnesium 400mg + Zinc 15mg</span></div>
+</div>
+
+<!-- 9:30 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">9:30 PM</span><span class="blk-title">Wind down</span><span class="blk-cal"></span></div>
+<div class="dl"><span class="dl-icon">📵</span><span class="dl-text">No phone. Read / light stretch / prep dabba.</span></div>
+</div>
+
+<!-- 10:30 PM -->
+<div class="blk">
+<div class="blk-top"><span class="blk-time">10:30 PM</span><span class="blk-title">Sleep</span><span class="blk-cal" style="color:#267E3E;">10.5 hr fast</span></div>
+<div class="dl"><span class="dl-icon">😴</span><span class="dl-text">7.5 hrs. Fat burns all night → 6 AM.</span></div>
+</div>
+
+<!-- NON-NEGOTIABLES -->
+<div class="sec">
+<div class="sec-h">📋 10 Non-Negotiables</div>
+<div class="rg">
+<div class="rc"><b>🥗 Salad FIRST</b> Before roti. Reduces spike 20-30%.</div>
+<div class="rc"><b>🫘 Protein always</b> Dal/paneer/curd at every meal.</div>
+<div class="rc"><b>🍞 3 lunch, 2 dinner</b> Dal+sabzi are the stars.</div>
+<div class="rc"><b>⏰ Dinner by 9 PM</b> 11 hr fast = overnight fat burn.</div>
+<div class="rc"><b>📦 Dabba only</b> Not in dabba? Don't eat it.</div>
+<div class="rc"><b>🏃 Walk daily</b> AM fasted + PM post-dinner.</div>
+<div class="rc"><b>😴 Sleep 7.5 hrs</b> 10:30 PM. No phone from 9:30.</div>
+<div class="rc"><b>⚖️ Weigh Sunday</b> AM, empty stomach. Track trend.</div>
+<div class="rc rc-em"><b>🥄 Measure oil</b> 1 level tbsp (15ml). Never pour.</div>
+<div class="rc rc-em"><b>🧀 Dal dinner fix</b> Dal night → add curd/paneer crumble.</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
